@@ -1,0 +1,16 @@
+{
+  "goods": [
+    {
+      "name": "ciggarets",
+      "id": 4
+    },
+    {
+      "name": "cocain",
+      "id": 5
+    },
+    {
+      "name": "LSD",
+      "id": 6
+    }
+  ]
+}
