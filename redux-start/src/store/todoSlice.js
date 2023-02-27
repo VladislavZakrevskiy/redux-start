@@ -98,7 +98,7 @@ const todoSlice = createSlice({
         todos: [],
         status: null,
         error: null,
-
+        userId: 1,
     },
     reducers: {
         addTodo(state, action){
@@ -110,6 +110,9 @@ const todoSlice = createSlice({
         },
         removeTodo(state, action){
             state.todos = state.todos.filter(todo => todo.id !== action.payload.id)
+        },
+        setUserId(state, action){
+            state.userId = action.payload.userId
         }
     },
     extraReducers: {
@@ -137,6 +140,6 @@ const todoSlice = createSlice({
         }
 })
 
-export const {addTodo, removeTodo, toggleTodoComplete} = todoSlice.actions;
+export const {addTodo, removeTodo, toggleTodoComplete, setUserId} = todoSlice.actions;
 
 export default todoSlice.reducer

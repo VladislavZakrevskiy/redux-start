@@ -9,7 +9,7 @@ export const goodApi = createApi({
     }),
     endpoints: (build) => ({
         getGoods: build.query({
-            query: (limit = '') => `goods?${limit && `_limit=${limit}`}`,
+            query: ({limit = '', userId = ''} ) => `goods?${userId && `userId=${userId}`}${limit && `&_limit=${limit}`}`,
             providesTags: (result) => result
             ? [
                 ...result.map(({ id }) => ({ type: 'Products', id })),
@@ -31,6 +31,14 @@ export const goodApi = createApi({
                 method: 'DELETE'
             }),
             invalidatesTags: [{type: 'Products', id: 'LIST'}]
+        }),
+        toggleProduct: build.mutation({
+            query: ({id, bool}) => ({
+                url: `goods/${id}`,
+                method: 'PATCH',
+                body: {completed: !bool}
+            }),
+            invalidatesTags: [{type: 'Products', id: 'LIST'}]
         })
     })
 })
@@ -38,5 +46,6 @@ export const goodApi = createApi({
 export const {
     useGetGoodsQuery,
     useAddProductMutation,
-    useDeleteProductMutation
+    useDeleteProductMutation,
+    useToggleProductMutation
     } = goodApi

@@ -1,16 +1,134 @@
 {
   "goods": [
     {
-      "name": "ciggarets",
+      "name": "hui",
+      "id": 1,
+      "userId": 1,
+      "completed": false
+    },
+    {
+      "name": "yes",
+      "id": 5,
+      "userId": 1,
+      "completed": true
+    },
+    {
+      "name": "OK",
+      "id": 7,
+      "userId": 1,
+      "completed": true
+    },
+    {
+      "name": "addProd",
+      "id": 8,
+      "userId": 2,
+      "completed": false
+    },
+    {
+      "name": "addNEW",
+      "id": 9,
+      "userId": 2,
+      "completed": false
+    },
+    {
+      "name": "goodApi",
+      "id": 10,
+      "userId": 2,
+      "completed": true
+    },
+    {
+      "name": "usersApi",
+      "id": 11,
+      "userId": 3,
+      "completed": false
+    },
+    {
+      "name": "HiHi",
+      "id": 12,
+      "userId": 3,
+      "completed": false
+    },
+    {
+      "name": "MEEEEEEEEEEEEEE",
+      "id": 13,
+      "userId": 3,
+      "completed": false
+    },
+    {
+      "name": "hurrah",
+      "userId": 1,
+      "id": 14
+    },
+    {
+      "name": "iiiiiiiiiiiiiiiiiiii",
+      "userId": 2,
+      "id": 15
+    },
+    {
+      "name": "Лариса Векторовна",
+      "password": "vlad20060316",
+      "date_birth": "2023-02-01",
+      "relationship": "vsvsvvssvsvsvs",
+      "music": "vsvsvsvsvsvs",
+      "id": 16
+    },
+    {
+      "name": "Лариса Векторовна",
+      "password": "vlad20060316",
+      "date_birth": "",
+      "relationship": "",
+      "music": "",
+      "id": 17
+    },
+    {
+      "name": "Лариса Векторовна",
+      "password": "vlad20060316",
+      "date_birth": "2023-02-08",
+      "relationship": "vdvdbdsbds",
+      "music": "bdsbdsbdsbdsb",
+      "id": 18
+    },
+    {
+      "name": "Лариса Векторовна",
+      "password": "vlad20060316",
+      "date_birth": "2023-02-09",
+      "relationship": "dbdsbfbfdbfd",
+      "music": "fbbfdbfdbfdb",
+      "id": 19
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Mihail",
+      "password": "qwerty123",
+      "date_birth": "01.01.01",
+      "relationship": "tasty",
+      "music": "Very Very Good"
+    },
+    {
+      "id": 2,
+      "name": "Dmitriy",
+      "password": "qwerty123",
+      "date_birth": "02.02.02",
+      "relationship": "xolostyak",
+      "music": "Very Good"
+    },
+    {
+      "id": 3,
+      "name": "Ivan",
+      "password": "qwerty123",
+      "date_birth": "03.03.03",
+      "relationship": "no",
+      "music": "Very Very Very Good"
+    },
+    {
+      "name": "Лариса Векторовна",
+      "password": "vlad20060316",
+      "date_birth": "1957-01-31",
+      "relationship": "любит матан",
+      "music": "шансон",
       "id": 4
-    },
-    {
-      "name": "cocain",
-      "id": 5
-    },
-    {
-      "name": "LSD",
-      "id": 6
     }
   ]
 }

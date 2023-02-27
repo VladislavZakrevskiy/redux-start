@@ -1,0 +1,22 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.list_item {
+    min-width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.delete {
+    border: none;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: inherit;
+}
